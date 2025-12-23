@@ -1,0 +1,377 @@
+ body {
+        background-image: url(images/background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;  
+        font-family: sans-serif;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+.topbar{
+ background-color: #000000;
+ padding: 7px 25px;
+ font-weight: 600;
+ font-style: normal;
+ font-family: "Sedan SC", serif;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+}
+.logo{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+.logo img{
+width: 40px;
+height: 40px;
+object-fit: contain;
+}
+.logo h1{
+font-size: 20px;
+color: rgb(222, 220, 220);
+}
+
+.navigacija{
+ display: flex;
+ align-items: center;
+ gap: 30px;
+}
+.navigacija a {
+ text-decoration: none;
+ color:rgb(222, 220, 220);
+ transition: color 0.3s;
+}
+
+.navigacija a:active {
+  transform: translateY(2px);
+  color: #999;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  display: flex;
+  gap: 20px;
+  
+ 
+}
+
+.photo {
+  width: 35%;
+  text-align: center;
+  opacity: 0;
+  transform: translateZ(30px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.photo img {
+  width: 80%;
+  border-radius: 15px;
+  transition: transform 0.4s ease,box-shadow 0.4s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.text-under-photo {
+  margin-top: 50px;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px 80px;
+  font-size: 25px;
+  color: #000;
+  font-family: serif;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.text-under-photo p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.info {
+  width: 60%;
+  border-radius: 15px;
+  background-color: #e7e7e7;
+  padding: 25px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateZ(30px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.info p {
+  font-family: serif;
+  font-size: 18px;
+}
+
+.info h2, .info h3 {
+  color: #000000;
+  border-bottom: 2px solid #3e3e3e;
+  padding-bottom: 5px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+ul, ol {
+  list-style: disc;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.education {
+  list-style: disc;
+  margin-left: 25px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: 600;
+ font-style: normal;
+
+}
+
+ul.contact li a {
+ color: #1ab9ee;
+ font-weight: 200;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 5px;
+ 
+}
+
+ul.contact li {
+ font-weight: 600;
+ font-style: normal;
+ font-family: "Sedan SC", serif;
+}
+
+
+ul.contact li a:hover {
+  text-decoration: underline;
+   
+}
+
+ol.languages li {
+ font-weight: 600;
+ font-style: normal;
+ font-family: "Sedan SC", serif;
+}
+
+ul.interests li {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 6px;
+  list-style: none;
+}
+
+ul.interests li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.faculty-container {
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-bottom: 75%; 
+  margin: 70px auto 70px auto; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faculty-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.multimedia-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.multimedia-section h1 {
+    font-size: 36px;
+   font-family: "Sedan SC", serif;
+    margin-bottom: 40px;
+    color: #dbdada;
+}
+
+.multimedia-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+
+.multimedia-section p {
+    font-size: 18px;
+   font-family: "Sedan SC", serif;
+    margin-bottom: 40px;
+    color: #dbdada;
+}
+
+.card {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(184, 184, 189, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h2 {
+    color: #b1b1b1;
+    margin-bottom: 15px;
+    font-family: "Sedan SC", serif;
+    
+}
+
+.responsive-media {
+    width: 100%;
+    border-radius: 10px;
+   
+}
+
+.audio-player {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.media-description {
+    margin-top: 15px;
+    color: #d5d5d5;
+}
+
+.styled-form input,
+.styled-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #2a2641;
+    color: #fff;
+}
+
+.submit-btn {
+    background-color: #d8d8d8;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}
+
+
+footer {
+  padding: 20px;
+ color:rgb(222, 220, 220);
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:  #000000;
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo, 
+  .info {
+    width: 100%;
+    margin: 0 auto 25px auto;
+    max-width: 500px;
+  }
+
+  .photo img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .text-under-photo {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+
+  .info {
+    padding: 20px;
+  
+  }
+
+  .faculty-container {
+    width: 95%;
+    padding-bottom: 60%;
+    margin: 25px auto 60px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navigacija {
+    gap: 15px;
+  }
+
+  .photo img {
+    width: 85%;
+  }
+
+  .text-under-photo {
+    padding: 12px 18px;
+    font-size: 18px;
+  }
+
+  .info h2, .info h3 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 16px;
+  }
+
+  ul.interests li {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}

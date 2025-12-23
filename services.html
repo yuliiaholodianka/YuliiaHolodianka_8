@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="services.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&family=Sedan+SC&display=swap" rel="stylesheet">
+<title>Virales | Services</title>
+</head>
+<body>
+<div class="topbar">
+     <div class="logo">
+       <img src="images/logo-Photoroom.png" alt="">
+       <h1>Virales</h1>
+   </div>
+   
+  <div class="navigacija">
+       <a href="index.html"> Home </a>
+       <a href="about.html" >About</a>
+       <a href="portfolio.html"> Portfolio </a>
+       <a href="services.html" > Services</a>
+        <a href="photography.html" > Photography</a>
+	 </div>
+  </div>
+
+ <section class="services">
+     <h2>My Services</h2>
+     <p>I offer design, branding, and photography services to help your projects shine with creativity and meaning.</p>
+
+      <ul class="service-list">
+         <li><strong>Graphic Design</strong> – logos, posters, and visual identity</li>
+         <li><strong>Web Design</strong> – responsive and elegant websites</li>
+         <li><strong>Photography</strong> – portraits, products, and events</li>
+     </ul>
+ </section>
+
+  <section class="service-form">
+     <h2>Request a Service</h2>
+     <form action="https://formspree.io/f/xyzbozra" method="POST">
+       <fieldset>
+         <legend>Service Request Form</legend>
+
+         <label for="fullname">Full Name:</label>
+         <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+         <label for="service">Select Service:</label>
+         <select id="service" name="service">
+           <option value="design">Graphic Design</option>
+           <option value="web">Web Design</option>
+           <option value="photo">Photography</option>
+         </select>
+
+         <label for="budget">Estimated Budget:</label>
+         <input list="budget-range" id="budget" name="budget" placeholder="Select or type">
+         <datalist id="budget-range">
+           <option value="8–20€">
+           <option value="20–60€">
+           <option value="60–100€">
+           <option value="100–200€">
+           <option value="200–500€">
+         </datalist>
+
+         <label for="message">Additional Details:</label>
+         <input type="text" id="message" name="message" placeholder="Describe your idea or project">
+
+         <button type="submit" value="Send">Send Request</button>
+       </fieldset>
+     </form>
+  </section>
+
+  <footer>
+    <strong>© 2025 Yuliia Holodianka</strong>
+  </footer>
+
+</body>
+</html>

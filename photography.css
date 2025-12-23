@@ -1,0 +1,174 @@
+   body {
+        background-image: url(images/background2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;  
+        font-family: sans-serif;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-attachment: fixed;
+    }
+
+.topbar{
+ background-color: #ddd9d9;
+ padding: 7px 25px;
+ font-weight: 600;
+ font-style: normal;
+ font-family: "Sedan SC", serif;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+}
+.logo{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+.logo img{
+width: 40px;
+height: 40px;
+object-fit: contain;
+}
+.logo h1{
+font-size: 20px;
+}
+
+.navigacija{
+ display: flex;
+ align-items: center;
+ gap: 30px;
+}
+.navigacija a {
+ text-decoration: none;
+ color: black;
+ transition: color 0.3s;
+}
+
+.navigacija a:hover {
+  color: dimgrey;
+}
+
+#photographs {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: rgba(221, 221, 221, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: "Sedan SC", serif;
+  text-align: center;
+  opacity: 0;
+  transform: translateZ(30px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+
+#photographs h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-family: "Sedan SC", serif;
+}
+
+.gallery {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery th {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 12px;
+  border: 1px solid #6a6969;
+  font-size: 15px;
+}
+
+.gallery td {
+  border: 1px solid #444444;
+  padding: 12px;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.gallery img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.gallery tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.gallery tr:hover {
+  background-color: #e7f3ff;
+  transition: background-color 0.2s;
+}
+
+.photos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ gap: 30px;
+  margin-top: 20px;
+  opacity: 0;
+ transform: translateZ(30px);
+ animation: fadeInUp 1s ease-out forwards;
+ animation-delay: 0.6s;
+ margin-bottom: 80px;
+}
+
+.photos h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #a9a9a9;
+  font-family: "Sedan SC", serif;
+}
+
+.photo1, .photo2 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.photos img {
+  width: 290px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  border: 10px solid #a9a9a9; 
+}
+
+footer {
+  padding: 20px;
+  color:rgb(0, 0, 0);
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-color:  #bebebe;
+}
